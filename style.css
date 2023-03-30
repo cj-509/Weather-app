@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #69e1ee, #9f4cce,
+     #f274d7, #f25757, #f2ef57, #5761f2, #1fe687);
+    background-size: 1500% 1500%;
+    animation: AnimationBackground 300s ease infinite;
+}
+
+@keyframes AnimationBackground {
+    0%{background-position: 0% 66%}
+    50%{background-position: 100% 35%}
+    100%{background-position: 0% 66%}
+}
+
+.app-name{
+    position: relative;
+}
+
+.app-wrap {
+    display: flex;
+    flex-direction: column;
+    min-width: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px;
+}
+header input {
+    width: 80%;
+    max-width: 28%;
+    padding: 10px 15px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+main {
+    flex: 1 1 100%;
+
+    padding: 25px 25px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.location .city {
+    font-size: 40px;
+    font-weight: 500;
+    color: #edf2f4;
+    margin-bottom: 5px;
+}
+
+.location .date {
+    font-size: 20px;
+    color: #edf2f4;
+}
+
+.current .temp {
+    font-size: 102px;
+    font-weight: 700;
+    margin: 30px 0;
+    color: #edf2f4;
+}
+
+.current .temp span {
+    font-weight: 200;
+}
+
+.current .weather {
+    font-size: 35px;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 15px;
+    color: #edf2f4;
+}
+
+.current .hi-low {
+    font-size: 24px;
+    font-weight: 450;
+    color: #edf2f4;
+}
